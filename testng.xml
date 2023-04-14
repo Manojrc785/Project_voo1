@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="21" name="Chrome Test">
+  <parameter name="username" value="admin"></parameter>
+  <parameter name="password" value="manager"></parameter>
+    <classes>
+      <class name="TestScript.ActitimePrintMessage"/>
+      <class name="TestScript.ActitimeCreateCustomer"/>
+      <class name="TestScript.AlertHandling"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Edge Test">
+ <parameter name="username" value="admin"></parameter>
+  <parameter name="password" value="manager"></parameter>
+    <classes>
+      <class name="TestScript.ActitimePrintMessage"/>
+      <class name="TestScript.ActitimeCreateCustomer"/>
+      <class name="TestScript.AlertHandling"/>
+    </classes>
+     </test>
+  
+</suite> <!-- Suite -->
